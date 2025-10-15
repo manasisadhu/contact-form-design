@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+
+		<!-- link css & bootstrap  -->
+		<link
+			rel="stylesheet"
+			href="/css/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="/css/style.css" />
+		<!-- link css & bootstrap  -->
+
+		<!-- link bootstrap icons  -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+		<!-- link bootstrap icons  -->
+		<title>Contact-form//valid</title>
+	</head>
+	<body>
+		<div class="container-fluid m-0 p-0 mx-auto">
+			<!-- full webpage  -->
+
+			<!-- Navbar  -->
+			<div class="container-lg bg-t mb-5 mb-md-0">
+				<nav
+					class="navbar navbar-expand-md navbar-expand-xl navbar-dark">
+					<div class="container-fluid">
+						<a
+							class="navbar-brand"
+							href="#">
+							<img
+								src="/images/logo(eme).png"
+								alt="logo"
+								height="60"
+								width="150" />
+						</a>
+						<button
+							class="navbar-toggler shadow-none border-1 border-white btn-col2 px-2 py-2 rounded-3"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar"
+							aria-label="Toggle navigation">
+							<span
+								class="bi bi-list text-white fs-1 fw-bold"></span>
+						</button>
+						<div
+							class="offcanvas offcanvas-start bg-transparent backdrop"
+							tabindex="-1"
+							id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel">
+							<div
+								class="offcanvas-header border-bottom border-white border-2">
+								<h5
+									class="offcanvas-title text-success"
+									id="offcanvasNavbarLabel">
+									<img
+										src="/images/logo(eme).png"
+										alt="logo"
+										height="60"
+										width="150" />
+								</h5>
+								<button
+									type="button"
+									class="btn-close bg-white"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body border-1">
+								<ul class="navbar-nav ms-auto">
+									<li
+										class="nav-item bord mt-2 mt-md-0 mt-xl-0 mt-lg-0">
+										<a
+											class="text-decoration-none text-white fw-semibold fs-5 bord1 px-3"
+											aria-current="page"
+											href="#"
+											>Home</a
+										>
+									</li>
+									<li
+										class="nav-item col fs-5 bord pt-2 pt-md-0">
+										<a
+											class="text-decoration-none navitem-col fw-semibold me-1 fs-5 menu py-2 px-3 ms-xl-4 text-white"
+											href="/about.html"
+											>About</a
+										>
+									</li>
+									<li class="nav-item fs-5 bord pt-2 pt-md-0">
+										<a
+											class="text-decoration-none navitem-col fw-semibold fs-5 py-2 px-3 ms-xl-4 menu text-white"
+											href="/service.html"
+											>Service</a
+										>
+									</li>
+									<li class="nav-item bord pt-2 pt-md-0">
+										<a
+											class="text-decoration-none navitem-col fw-semibold fs-5 menu py-2 px-3 ms-xl-4 text-white"
+											href="/contact.html"
+											>Contact</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<!-- Navbar  -->
+
+			<!-- hero sec open  -->
+			<div
+				class="container d-flex flex-column justify-content-center align-items-center h pb-5 pb-md-0">
+				<div
+					class="bg-white h-auto w-auto p-5 rounded-3 d-flex justify-content-center align-items-center gap-md-5 gap-0 z-0">
+					<!-- Contact form sec start  -->
+					<div class="">
+						<div
+							class="fw-semibold text-secondary text-center text-md-start">
+							C O N T A C T
+							<span class="ps-1 text-center text-md-start">
+								U S</span
+							>
+						</div>
+						<div
+							class="text-primary fw-bold fs-3 pt-1 pt-md-0 text-center text-md-start">
+							Get in touch
+						</div>
+						<div
+							class="text-black-50 pt-2 pt-md-1 pb-3 text-center text-md-start">
+							Need Help or Have Questions? Get in Touch with EME
+							Today!
+						</div>
+						<form
+							class="row g-3 needs-validation"
+							novalidate
+							action="https://api.web3forms.com/submit"
+							method="POST"
+							id="mform">
+							<input
+								type="hidden"
+								name="access_key"
+								value="8da5ea41-065f-46a4-bd64-c0c05626fe72" />
+							<div class="position-relative">
+								<input
+									type="text"
+									class="form-control p-2"
+									id="validationTooltip01"
+									placeholder="Enter Your Name"
+									required
+									name="name" />
+								<div class="invalid-feedback">
+									Please Enter Your Name
+								</div>
+							</div>
+
+							<div class="position-relative">
+								<div class="input-group has-validation">
+									<input
+										type="email"
+										class="form-control p-2"
+										id="validationTooltipUsername"
+										aria-describedby="validationTooltipUsernamePrepend"
+										required
+										placeholder="Enter Your Email Id"
+										name="email" />
+									<div class="invalid-feedback">
+										Inavild Email id
+									</div>
+								</div>
+							</div>
+
+							<div class="">
+								<textarea
+									class="form-control"
+									id="validationTextarea"
+									placeholder="Required example textarea"
+									required
+									name="message"></textarea>
+								<div class="invalid-feedback">
+									Please enter a message in the textarea.
+								</div>
+							</div>
+
+							<div class="col-12">
+								<button
+									class="btn btn-primary"
+									type="submit">
+									Submit form
+								</button>
+							</div>
+						</form>
+					</div>
+					<!-- Contact form sec end  -->
+					<!-- img + information  -->
+					<div class="">
+						<img
+							src="/images/undraw_profile-data_xkr9.svg"
+							alt="side-img"
+							height="100%"
+							width="100%"
+							class="d-md-block d-none" />
+					</div>
+					<!-- img + information  -->
+				</div>
+			</div>
+			<!-- hero sec close  -->
+
+			<!-- full webpage  -->
+		</div>
+
+		<!-- link js  -->
+		<script src="/js/control.js"></script>
+		<script src="/js/vaild.js"></script>
+		<script src="/js/bootstrap.bundle.js"></script>
+		<!-- link js  -->
+	</body>
+</html>
